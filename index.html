@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>50 Apps for an Exceptional AI Engineer CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+  <div class="glow glow-3"></div>
+
+  <div class="container">
+    <header>
+      <div class="badge">50 Project Challenge</div>
+      <h1>AI Engineer <span class="gradient-text">CV Builder</span></h1>
+      <p class="subtitle">Build these 50 apps to craft an exceptional portfolio that stands out.</p>
+      <div class="stats-bar">
+        <div class="stat">
+          <span class="stat-number" id="completedCount">0</span>
+          <span class="stat-label">Completed</span>
+        </div>
+        <div class="progress-ring-container">
+          <svg class="progress-ring" viewBox="0 0 60 60">
+            <circle class="progress-ring-bg" cx="30" cy="30" r="26"/>
+            <circle class="progress-ring-fill" id="progressRing" cx="30" cy="30" r="26"/>
+          </svg>
+          <span class="progress-percent" id="progressPercent">0%</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" id="remainingCount">50</span>
+          <span class="stat-label">Remaining</span>
+        </div>
+      </div>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nlp">NLP</button>
+        <button class="filter-btn" data-filter="cv">Computer Vision</button>
+        <button class="filter-btn" data-filter="genai">Gen AI</button>
+        <button class="filter-btn" data-filter="mlops">MLOps</button>
+        <button class="filter-btn" data-filter="data">Data</button>
+        <button class="filter-btn" data-filter="infra">Infra</button>
+      </div>
+    </header>
+
+    <main id="appList"></main>
+
+    <footer>
+      <button id="resetBtn" class="reset-btn">Reset All Progress</button>
+      <p class="footer-note">Progress saved locally. Keep building.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
